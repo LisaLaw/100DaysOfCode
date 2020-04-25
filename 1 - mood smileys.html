@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 1 Mood</title>
+        <meta charset="UTF-8">
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>	
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script>
+            function myFunction() {
+                var txt;
+                var mood = prompt("How are you feeling?","");
+                if (mood == null || mood == ""){
+                    txt = "Feeling empty today? Remember, you are not alone in the universe!";
+                }
+                else if (mood == "happy" || mood == "super" || mood == "fantastic" || mood == "great"){
+                    txt = "Yayy - you go champ!";
+                }
+                else if (mood == "sad") {
+                    txt = "I'm sorry to hear. Do you need a hug?";
+                }
+                else if (mood == "angry" || mood == "upset"){
+                    txt = "Go smash something - it might make you feel better.";
+                }
+                else if (mood == "ok") {
+                    txt = "That's all you can come up with? You should read more, it strengthens your vocabulary.";
+                }
+                else {
+                    txt = "I'm sorry, I don't know this mood. Wanna try again?";
+                }
+                document.getElementById("mytext").innerHTML = txt;
+                }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to the mood visualiser!</h1>
+        <p>What is your mood today?</p>
+        <button onclick="myFunction()">Tell me your mood</button>
+
+        <p id="mytext"></p>
+        
+    </body>
+
+</html>
