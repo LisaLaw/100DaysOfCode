@@ -1,0 +1,138 @@
+html {
+    width: 100%;
+    font-style: Comic, sans-serif;
+    background-color: ivory;
+    display: flex;
+    justify-content: center;
+}
+body {
+    width: 80%;
+    height: 1000px;
+    background-color: black;
+    color: rgb(247, 10, 207);
+    align-self: center;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-weight: bold;
+    font-size: larger;
+}
+.stars{
+    height: 0.5px;
+    width: 0.5px;
+    background-color: white;
+    color: white;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background: -moz-element(#ele) repeat center;
+    animation: twinkle_stars 10s linear infinite;
+}
+
+@keyframes twinkle_stars {
+    0% {color: white;
+        background-color: white;
+        top: 0px;}
+        10% {color:black; background-color: black;}
+        20% {color: white; background-color: white;}
+        25% {color: black;
+        background-color: black;
+        top: 150px;}
+        35% {color: white; background-color: white;}
+        50% {color: black; background-color: black;}
+        75% {color: white;
+        background-color: white;
+        top:300px}
+        85% {color:black; background-color: black;}
+        95% {color: white; background-color: white;}
+        100% {color: black;
+        background-color: black;
+        top: 500px;
+        }
+}
+
+@-webkit-keyframes twinkle_stars {
+    0% {color: white;
+        background-color: white;
+        top: 0px;}
+        10% {color:black; background-color: black;}
+        20% {color: white; background-color: white;}
+        25% {color: black;
+        background-color: black;
+        top: 150px;}
+        35% {color: white; background-color: white;}
+        50% {color: black; background-color: black;}
+        75% {color: white;
+        background-color: white;
+        top:300px}
+        85% {color:black; background-color: black;}
+        95% {color: white; background-color: white;}
+        100% {color: black;
+        background-color: black;
+        top: 500px;
+        }
+}
+@-moz-keyframes twinkle_stars {
+    0% {color: white;
+    background-color: white;
+    top: 0px;}
+    10% {color:black; background-color: black;}
+    20% {color: white; background-color: white;}
+    25% {color: black;
+    background-color: black;
+    top: 150px;}
+    35% {color: white; background-color: white;}
+    50% {color: black; background-color: black;}
+    75% {color: white;
+    background-color: white;
+    top:300px}
+    85% {color:black; background-color: black;}
+    95% {color: white; background-color: white;}
+    100% {color: black;
+    background-color: black;
+    top: 500px;
+    }
+}
+
+@-ms-keyframes twinkle_stars {
+    0% {color: white;
+        background-color: white;
+        top: 0px;}
+        10% {color:black; background-color: black;}
+        20% {color: white; background-color: white;}
+        25% {color: black;
+        background-color: black;
+        top: 150px;}
+        35% {color: white; background-color: white;}
+        50% {color: black; background-color: black;}
+        75% {color: white;
+        background-color: white;
+        top:300px}
+        85% {color:black; background-color: black;}
+        95% {color: white; background-color: white;}
+        100% {color: black;
+        background-color: black;
+        top: 500px;
+        }
+}
+
+button {
+    font-size: larger;
+    font: bold;
+    color: red;
+    background-color: lightgrey;
+    border: 2px red;
+    border-radius: 10%;
+    padding: 20px;
+    align-self: center;
+}
+button:hover {
+    cursor: pointer;
+    color: green;
+    border-color: green;
+}
