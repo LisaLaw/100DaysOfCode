@@ -3,6 +3,8 @@
     <head>
         <title>Day 1 Mood</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./mood-1.css">
+        <!--<script src="./mood-1.js"></script>-->
         
         <script>
             function myFunction() {
@@ -11,7 +13,7 @@
                 if (mood == null || mood == ""){
                     txt = "Feeling empty today? Remember, you are not alone in the universe!";
                 }
-                else if (mood == "happy" || mood == "super" || mood == "fantastic" || mood == "great" || mood == "Happy" || mood == "Super" || mood == "Fantastic" || mood == "Great"){
+                else if (mood == "happy" || mood == "super" || mood == "fantastic" || mood == "Happy" || mood == "great" || mood == "Super" || mood == "Fantastic" || mood == "Great"){
                     txt = "Yayy - you go champ!";
                 }
                 else if (mood == "sad" || mood == "Sad") {
@@ -29,16 +31,21 @@
                 else {
                     txt = "I'm sorry, I don't know this mood. Wanna try again?";
                 }
-                document.getElementById("mytext").innerHTML = txt;
-                }
+            }
+            
         </script>
     </head>
+
     <body>
         <h1>Welcome to the mood visualiser!</h1>
         <p>What is your mood today?</p>
         <button onclick="myFunction()">Tell me your mood</button>
-
+        
         <p id="mytext"></p>
+
+        <div class="stars" id="elem1"></div>
+        
+        
         
     </body>
 
