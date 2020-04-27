@@ -4,36 +4,7 @@
         <title>Day 1 Mood</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./mood-1.css">
-        <!--<script src="./mood-1.js"></script>-->
         
-        <script>
-            function myFunction() {
-                var txt;
-                var mood = prompt("How are you feeling?","");
-                if (mood == null || mood == ""){
-                    txt = "Feeling empty today? Remember, you are not alone in the universe!";
-                }
-                else if (mood == "happy" || mood == "super" || mood == "fantastic" || mood == "Happy" || mood == "great" || mood == "Super" || mood == "Fantastic" || mood == "Great"){
-                    txt = "Yayy - you go champ!";
-                }
-                else if (mood == "sad" || mood == "Sad") {
-                    txt = "I'm sorry to hear. Do you need a hug?";
-                }
-                else if (mood == "angry" || mood == "upset" || mood == "Angry" || mood == "upset"){
-                    txt = "Go smash something - it might make you feel better.";
-                }
-                else if (mood == "ok" || mood == "OK") {
-                    txt = "That's all you can come up with? You should read more, it strengthens your vocabulary.";
-                }
-                else if (mood == "miserable" || mood == "Miserable") {
-                    txt = "Oh really? Sending you a virtual hug.";
-                }
-                else {
-                    txt = "I'm sorry, I don't know this mood. Wanna try again?";
-                }
-            }
-            
-        </script>
     </head>
 
     <body>
@@ -43,10 +14,9 @@
         
         <p id="mytext"></p>
 
-        <div class="stars" id="elem1"></div>
-        
+        <div class="stars"></div>
         
         
     </body>
-
+    <script src="./mood-1-neu.js"></script>
 </html>
