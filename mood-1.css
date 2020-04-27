@@ -30,8 +30,8 @@ p {
     border-radius: 50%;
     display: inline-block;
     position: relative;
-    background: -moz-element(#ele) repeat center;
-    animation: twinkle_stars 10s linear infinite;
+    background: repeat center;
+    animation: twinkle_stars 2s linear infinite;
 }
 
 @keyframes twinkle_stars {
