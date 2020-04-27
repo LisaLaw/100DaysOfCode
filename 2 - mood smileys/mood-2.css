@@ -1,0 +1,119 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-style: Comic, sans-serif;
+    background-color: ivory;
+    display: flex;
+    justify-content: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+.first_row, .second_row, .third_row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+}
+.box {
+    border: 3px solid white;
+    padding: 5px white;
+    border-radius: 10px;
+    box-shadow: 2px grey;
+    background-color: black;
+    width: 100%;
+    display: flex;
+}
+.box:hover {
+    background-color: white;
+    border: none;
+    padding: none;
+}
+.box:hover p {
+    display: none;
+}
+#box01:hover {
+    background: url("./happy smiley.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#box02:hover {
+    background: url("./sad smiley.jpg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#box03:hover {
+    background: url("./upset smiley.jpg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#box04:hover {
+    background: url("./angry smiley.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#box05:hover {
+    background: url("./frustrated smiley.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#box06:hover {
+    background: url("./inlove smiley.jpg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#box07:hover {
+    background: url("./miserable smiley.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#box08:hover {
+    background: url("./groovin smiley.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#box09:hover {
+    background: url("./motivated smiley.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+p {
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(245, 19, 196);
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
