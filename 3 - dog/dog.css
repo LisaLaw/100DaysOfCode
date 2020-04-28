@@ -76,15 +76,15 @@ body {
 .eyes {
     border-radius: 50%;
     background-color: black;
-    height: 80px;
-    width: 80px;
+    height: 85px;
+    width: 85px;
     position: absolute;
 }
 .eyes#left {
-    transform: translate(200%, 210%);
+    transform: translate(190%, 200%);
 }
 .eyes#right{
-    transform: translate(465%, 210%);
+    transform: translate(450%, 200%);
 }
 .pupils {
     border-radius: 50%;
@@ -167,19 +167,23 @@ body {
     100% {top: 10px;}
 }
 .ear {
-    height: 400px;
+    height: 420px;
     width: 150px;
     background-color: rgb(124, 25, 25);
-    border-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
     border: solid black 2px;
     position: relative;
     top: 25%;
-    opacity: 100%;
 }
 #left-ear {
     left: 70px;
     z-index: 1;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 10%;
 }
 #right-ear {
     left: -70px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 70%;
 }
