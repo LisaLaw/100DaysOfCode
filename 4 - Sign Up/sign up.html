@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 5 Sign Up Page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./sign up.css">
+        <script src="./sign up.js"></script>
+    </head>
+    <body>
+        <div class="left">
+            <h1>30 Day Run Challenge</h1>
+            <h2>Sign up now!</h2>
+        </div>
+        <div class="right">
+            <form name="sign up" id="sign_up_box" action="#">
+                <div class="user_input">
+                    <p>First Name</p>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your name...">
+                </div>
+                <div class="user_input">
+                    <p>Last Name</p>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name...">
+                </div>
+                <div class="user_input">
+                    <p>Email Address</p>
+                    <input type="text" id="email" name="email" placeholder="Enter your email address...">
+                </div>
+                <div class="user_input">
+                    <p>Password</p>
+                    <input type="password" id="pw" name="password" placeholder="Choose a password...">
+                </div>
+                <div class="user_input">
+                    <input type="button" value="Submit" onclick="submit_function()">
+                </div>
+                <p id="answer"></p>
+            </form>
+
+        </div>
+    </body>
+</html>

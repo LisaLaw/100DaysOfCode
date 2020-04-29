@@ -1,0 +1,80 @@
+html {
+    width: 98%;
+    height: 98%;
+    background-color: coral;
+    font-family: Tahoma, sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.left {
+    background: url("./runner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+h1 {
+    color: darkblue;
+    font-size: 50px;
+    border: darkblue solid 1px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+h2 {
+    color: rgb(211, 60, 5);
+    font-size: 30px;
+    border: 2px solid rgb(211, 60, 5);
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+}
+#sign_up_box {
+    background-color: white;
+    box-shadow: 0 0 5px inset;
+    border-radius: 2%;
+    height: auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+}
+.user_input {
+    width: 90%;
+    align-self: center;
+    padding: 10px;
+}
+.user_input p {
+    color: rgb(211, 60, 5);
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 0 0 2px black;
+}
+input[type=button] {
+    background-color: coral;
+    color: black;
+    border: rgb(211, 60, 5);
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+input[type=button]:hover {
+    cursor: pointer;
+}
