@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Day 6 Vocabulary Flashcards</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./vocab_03.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#front_01").click(function() {
+                    $(this).hide();
+                });
+                $("#back_01").click(function() {
+                    $("#front_01").show();
+                });
+            });
+            /*
+            $(document).ready(function() {
+                $("#arrow_right").click(function() {
+                    $("01").hide();
+                });
+                $("#arrow_right").click(function() {
+                    $("02").show();
+                });
+            });
+            */
+        </script>
+    </head>
+
+    <body>
+        <button class="arrow" id="arrow-left"></button>
+
+        <div class="flashcard" id="01">
+            <div class="front" id="front_01">
+                I love programming.
+            </div>
+            <div class="back" id="back_01">
+                Ich liebe Programmieren.
+            </div>
+        </div>
+    
+        <div hidden class="flashcard" id="02">
+            <div class="front">
+                Programming is hard, but fun.
+            </div>
+            <div class="back">
+                Programmieren ist schwer, aber macht Spass.
+            </div>
+        </div>        
+
+        <div hidden class="flashcard" id="03">
+            <div class="front">
+                Do you like programming?
+            </div>
+            <div class="back">
+                Programmierst du gerne?
+            </div>
+        </div>
+         
+
+        <button class="arrow" id="arrow-right"></button>
+        
+
+    </body>
+</html>
