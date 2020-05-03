@@ -1,0 +1,76 @@
+html{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+body {
+    color: #262729;
+    background-image: url("background-food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+nav {
+    display: flex;
+    top: 15px;
+    justify-content: space-between;
+    padding: 10px;
+    opacity: 100%;
+    background-color: black;
+    opacity: 90%;
+}
+.dropdown {
+    display: inline-block;
+    max-height: 20px;
+    padding: 20px;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    min-width: 300px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+    min-height: 20px;
+    background-color: rgba(37, 37, 37, 0.726);
+    left: 0;
+}
+.dropdown a, #watch_b a {
+    font-size: 18px;
+    text-decoration: none;
+    color: chartreuse;
+    display: block;
+    padding: 10px;
+}
+.dropdown-content:hover a, .dropdown:hover a, #watch_b:hover a {
+    color: green;
+}
+#watch_b {
+    border: solid 1px chartreuse;
+    background-color: transparent;
+}
+.top {
+    position: relative;
+    top: 0px;
+    
+}
+.top-left {
+    width: 400px;
+    height: 600px;
+    background-color: black;
+    opacity: 90%;
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    line-height: 0.8;
+    
+}
