@@ -5,60 +5,41 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./vocab_03.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $("#front_01").click(function() {
-                    $(this).hide();
-                });
-                $("#back_01").click(function() {
-                    $("#front_01").show();
-                });
-            });
-            /*
-            $(document).ready(function() {
-                $("#arrow_right").click(function() {
-                    $("01").hide();
-                });
-                $("#arrow_right").click(function() {
-                    $("02").show();
-                });
-            });
-            */
-        </script>
+        <!--<script src="vocab_03.js"></script>-->
     </head>
 
     <body>
-        <button class="arrow" id="arrow-left"></button>
+        <button class="arrow" id="arrow-left" onclick="document.getElementById('02').style.display='none'; document.getElementById('01').style.display='block'";></button>
 
-        <div class="flashcard" id="01">
-            <div class="front" id="front_01">
+        <div class="flashcard flashcard--current" id="01">
+            <div class="front" id="front_01" onclick="document.getElementById('front_01').style.display='none'; document.getElementById('back_01').style.display='block'";>
                 I love programming.
             </div>
-            <div class="back" id="back_01">
+            <div class="back" id="back_01" onclick="document.getElementById('back_01').style.display='none'; document.getElementById('front_01').style.display='block'";>
                 Ich liebe Programmieren.
             </div>
         </div>
     
-        <div hidden class="flashcard" id="02">
-            <div class="front">
+        <div class="flashcard" id="02">
+            <div class="front" id="front_02" onclick="document.getElementById('front_02').style.display='none'; document.getElementById('back_02').style.display='block'";>
                 Programming is hard, but fun.
             </div>
-            <div class="back">
+            <div class="back" id="back_02" onclick="document.getElementById('back_02').style.display='none'; document.getElementById('front_02').style.display='block'";>
                 Programmieren ist schwer, aber macht Spass.
             </div>
         </div>        
 
-        <div hidden class="flashcard" id="03">
-            <div class="front">
+        <div class="flashcard" id="03">
+            <div class="front" id="front_03" onclick="document.getElementById('front_03').style.display='none'; document.getElementById('back_03').style.display='block'";>
                 Do you like programming?
             </div>
-            <div class="back">
+            <div class="back" id="back_03" onclick="document.getElementById('back_03').style.display='none'; document.getElementById('front_03').style.display='block'";>
                 Programmierst du gerne?
             </div>
         </div>
          
 
-        <button class="arrow" id="arrow-right"></button>
+        <button class="arrow" id="arrow-right" onclick="document.getElementById('01').style.display='none'; document.getElementById('02').style.display='block'";></button>
         
 
     </body>
