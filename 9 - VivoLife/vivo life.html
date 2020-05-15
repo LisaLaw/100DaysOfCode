@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vivo Life Mock</title>
+        <link rel="stylesheet" href="./vivolife.css">
+        <script src="./vivolife.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="UKflag.jpg" alt="flag">
+            <p>UK</p>
+        </header>
+
+        <nav id="navbar">
+            <span class="nav-left">
+                <a href="#" class="nav-btn" onclick="toggleBtn1()";>
+                    SHOP+
+                </a>                  
+                <a href="#" class="nav-btn" onclick="toggleBtn2()";>
+                    VIVO+
+                </a>
+                <a href="#">
+                    RECIPES
+                </a>
+                <a href="#">
+                    BLOG
+                </a>
+                <a href="#">
+                    UNIVERSITY
+                </a>
+            </span>
+            <span class="nav-cent">
+                VIVO
+            </span>
+            <span class="nav-right">
+                <a href="#">
+                    MY ACCOUNT
+                </a>
+                <a href="#">
+                    BASKET
+                </a>
+            </span>
+        </nav>
+        <div class="second-menu hidden" id="menu_01">
+            <a href="#">ALL</a>
+            <a href="#">SUBSCRIBE & SAVE</a>
+            <a href="#">PERFORM<p class="small">Raw Plant Protein & BCAA</p></a>
+            <a href="#">SUSTAIN<p class="small">Plant Based BCAA & Coconut Water</p></a>
+            <a href="#">THRIVE<p class="small">Living Multinutrient</p></a>
+            <a href="#">RITUAL<p class="small">Plant Based Protein</p></a>
+            <a href="#">MACA<p class="small">Passion & Power</p></a>
+            <a href="#">MATCHA<p class="small">Find your Zen</p></a>
+            <a href="#">MAGIC<p class="small">Adaptogenic Mushroom Lattes</p></a>
+            <a href="#">O3<p class="small">Plant Based Omega 3</p></a>
+            <a href="#">D3 & K2<p class="small">Vegan D3 with K2</p></a>
+            <a href="#">B12<p class="small">Vegan Vitamin B12</p></a>
+            <a href="#">CREATINE<p class="small">Pure Creatine Monohydrate</p></a>
+            <a href="#">MAGIC COFFEE<p class="small">Ground Coffe with Lion's Mane</p></a>
+            <a href="#">ACCESSORIES</a>
+        </div>
+        <div class="second-menu hidden" id="menu_02">
+            <a href="#">ABOUT US</a>
+            <a href="#">OUR TEAM</a>
+            <a href="#">OUR PLANET</a>
+            <a href="#">VGANIC</a>
+            <a href="#">EVENTS</a>
+            <a href="#">REFER A FRIEND</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="slide-container">
+            <div class="slide fade current">
+                <img src="bowl.jpg" style="width:100%">
+                <div class="caption">
+                    <div class="company-name">VIVO LIFE</div>
+                    <h1>PLANT BASED SUPPLEMENTS THAT DON'T COST THE EARTH</h1>
+                    <button class="cta">SHOP NOW</button>
+                </div>
+                <div class="trees"><p class="big">140869</p><p>TREES NOW PLANTED</p></div>
+            </div>
+            <div class="slide fade" style="color: white;">
+                <img src="rainforest.jpg" style="width:100%">
+                <div class="caption">
+                    <div class="company-name">VIVO LIFE</div>
+                    <h1>FOR OUR PLANET</h1>
+                    <p class="explanation">For every order on our website we will plant one tree for the purpose of reforestation, agroforestry and reducing extreme poverty for local villagers</p>
+                    <button class="cta">SHOP NOW</button>
+                </div>
+                <div class="trees"><p class="big">140869</p><p>TREES NOW PLANTED</p></div>
+            </div>
+            <div class="slide fade">
+                <img src="vivo1.jpg" style="width:100%">
+                <div class="caption">
+                    <div class="company-name">VIVO LIFE</div>
+                    <h1>FOR YOUR HEALTH</h1>
+                    <p class="explanation">Plant based ingredients with no fillers, binders or artificial flavours</p>
+                    <button class="cta">SHOP NOW</button>
+                </div>
+                <div class="trees"><p class="big">140869</p><p>TREES NOW PLANTED</p></div>
+            </div>
+            <div class="slide fade">
+                <img src="people.jpg" style="width:100%">
+                <div class="caption">
+                    <div class="company-name">VIVO LIFE</div>
+                    <h1>FOR THE LIVING</h1>
+                    <p class="explanation">Our mission is to make a positive change for our health, our planet and all the living beings we share it with</p>
+                    <button class="cta">SHOP NOW</button>
+                </div>
+                <div class="trees"><p class="big">140869</p><p>TREES NOW PLANTED</p></div>
+            </div>
+            <div class="slide fade">
+                <img src="vivo2.png" style="width:100%">
+                <div class="caption">
+                    <div class="company-name">VIVO LIFE</div>
+                    <h1>FOR YOUR HEALTH</h1>
+                    <p class="explanation">Plant based ingredients with no fillers, binders or artificial flavours</p>
+                    <button class="cta">SHOP NOW</button>
+                </div>
+                <div class="trees"><p class="big">140869</p><p>TREES NOW PLANTED</p></div>
+            </div>
+        </div>
+        <div class="dot-container">
+            <div class="dot" onclick="currentSlide(1)"></div>
+            <div class="dot" onclick="currentSlide(2)"></div>
+            <div class="dot" onclick="currentSlide(3)"></div>
+            <div class="dot" onclick="currentSlide(4)"></div>
+            <div class="dot" onclick="currentSlide(5)"></div>
+        </div>
+        <div class="logo-container">
+            <img src="logo1.png">
+        </div>
+        <h3>SHOP BY CATEGORY</h3>
+        <div class="shop-window-container">
+            <span class="shop-window" href="#" id="protein-shop">
+                <p class="img-caption">PROTEIN<br>POWDERS</p>
+            </span>
+            <span class="shop-window" href="#" id="minerals-shop">
+                <p class="img-caption">VITAMINS<br> & MINERALS</p>
+            </span>
+            <span class="shop-window" href="#" id="superfoods-shop">
+                <p class="img-caption">SUPERFOODS<br>& ADAPTOGENS</p>
+            </span>
+            <span class="shop-window" href="#" id="performance-shop">
+                <p class="img-caption">FITNESS AND<br>PERFORMANCE</p>
+            </span>
+        </div>
+
+
+        
+
+
+
+    </body>
+
+
+
+</html>
