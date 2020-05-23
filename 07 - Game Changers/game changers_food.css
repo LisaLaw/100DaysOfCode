@@ -1,0 +1,271 @@
+html{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    color: #262729;
+    height: 600px;
+}
+body::after {
+    content: "";
+    background-image: url("food.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 90%;
+    overflow: hidden;
+    padding: 35px 10px;
+    transition: 0.2s;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.dropdown {
+    display: inline-block;
+    max-height: 20px;
+    padding: 20px;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-width: 300px;
+    opacity: 100%;
+}
+.dropdown:hover > .dropdown-content {
+    display: block;
+    cursor: pointer;
+    min-height: 20px;
+    background-color: rgba(37, 37, 37, 0.726);
+    left: 0;
+    opacity: 100%;
+}
+.dropdown a, nav .cta a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #60af08;
+    display: block;
+    padding: 10px;
+}
+.dropdown-content:hover a, .dropdown:hover a, nav .cta:hover a {
+    color: green;
+}
+nav .cta {
+    border: solid 1px #60af08;
+    background-color: transparent;
+    padding: 0px;
+    width: 200px;
+}
+.top {
+    position: relative;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.top-left {
+    height: auto;
+    opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 20px;
+    position: relative;
+}
+.top-right {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    overflow: visible;
+    bottom: 0px;
+    background-image: url("food.jpg");
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    line-height: 0.8;
+    font-style: italic;
+    letter-spacing: 0.1px;
+}
+h2 {
+    color: rgb(177, 174, 174);
+    font-size: 18px;
+    font-weight: bold;
+    width: 150%;
+}
+
+.main {
+    background-color: rgb(201, 185, 185);
+    display: flex;
+    flex-direction: column;
+}
+.sub-main {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    height: 500px;
+}
+.main-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    max-width: 800px;
+}
+.main-left .cta {
+    width: 200px;
+}
+.main-right {
+    width: 60%;
+}
+.main-right img {
+    width: 100%;
+}
+p {
+    font-weight: bold;
+    font-size: 18px;
+    width: 80%;
+    line-height: 35px;
+}
+#sub_02 {
+    background-image: url("lasagna.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sub_04 {
+    background-image: url("salad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.faq-card {
+    background-color: white;
+    border: 0.5 black solid;
+    box-shadow: -5px -5px 3px grey;
+    width: 300px;
+    height: 180px;
+    margin-top: 70px;
+}
+.faq-card p {
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+p.faq-card-title {
+    font-size: 12px;
+    color: #60af08;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-links a, .footer-bottom-left a, .footer-bottom-center a {
+    text-decoration: none;
+    color: #60af08;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 13px;
+}
+.footer-links a:visited, .footer-bottom-left a:visited, .footer-bottom-center a:visited {
+    color: #60af08;
+}
+.footer-links a:hover, .footer-bottom-left a:hover, .footer-bottom-center a:hover {
+    color: green;
+}
+.footer-links p {
+    line-height: 0.3;
+    color: black;
+}
+.footer-links p.big {
+    font-size: 20px;
+}
+.right-angle {
+    color: black;
+    padding-left: 5px;
+    transition: padding-left 0.75s;
+}
+.right-angle:hover {
+    padding-left: 10px;
+    color: #60af08;
+}
+.footer-main-link:hover p > .right-angle {
+    padding-left: 10px;
+    color: #60af08;
+}
+.footer-top button {
+    margin-top: 20px;
+}
+.cta {
+    background-color: #60af08;
+    border: none;
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.cta a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.cta a:hover {
+    background-color: green;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+}
+.footer-bottom-center img {
+    width: 20px;
+    color: #60af08;
+    padding: 0 5px;
+} 
+.footer-bottom-right {
+    width: 35%;
+}
+p.small {
+    font-size: 10px;
+    margin-top: 0px;
+    line-height: 1;
+    padding: 0px;
+    text-align: right;
+}
