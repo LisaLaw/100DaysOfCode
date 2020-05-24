@@ -1,0 +1,59 @@
+html {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+.recipe {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+}
+.recipe:hover {
+    cursor: pointer;
+}
+a:hover {
+    cursor: pointer;
+}
+.img-container {
+    height: 300px;
+    overflow: hidden;
+}
+.recipe img {
+    width: 100%;
+    position: center;
+    display: block;
+    margin: 0 auto;
+}
+.presentation {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin-top: -80px;
+}
+.presentation a {
+    text-decoration: none;
+    color: black;
+}
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+p {
+    text-align: center;
+}
