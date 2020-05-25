@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./pricing.css">
+        <script type="text/javascript" src="./pricing.js"></script>
+    </head>
+    <body>
+        <h2>Choose your option</h2>
+        <div class="main">   
+            <div class="option">
+                <p class="option-name">basic</p>
+                <h3>$10.00</h3>
+                <p class="feature">Feature 1</p>
+                <p class="feature">Feature 2</p>
+                <p class="feature">Feature 3</p>
+                <button id="basic-button" onclick="toggleVisibility()">Learn more</button>
+            </div>
+            <div class="option">
+                <p class="option-name">full</p>
+                <h3>$15.00</h3>
+                <p class="feature">Feature 1</p>
+                <p class="feature">Feature 2</p>
+                <p class="feature">Feature 3</p>
+                <button>Learn more</button>
+            </div>
+            <div class="option">
+                <p class="option-name">premium</p>
+                <h3>$20.00</h3>
+                <p class="feature">Feature 1</p>
+                <p class="feature">Feature 2</p>
+                <p class="feature">Feature 3</p>
+                <button>Learn more</button>
+            </div>
+        </div>
+        <div id="basic-detail" class="details hidden">
+            <h3>basic</h3>
+            <p class="feature">Feature 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur nec dictum tellus, a dictum metus. Donec interdum mi at elit sagittis placerat.
+                Mauris aliquet, libero sed porta lacinia, dolor dolor gravida eros, quis laoreet augue leo ac purus.
+            </p>
+            <p class="feature">Feature 2: Morbi efficitur, purus ut ultrices lacinia, arcu ex consectetur lacus, eget consequat orci ligula non magna.
+                Ut aliquet, augue a tempor porttitor, leo dolor laoreet ipsum, et commodo neque elit sit amet est.
+                Vestibulum luctus fringilla imperdiet. Nam dictum erat condimentum est posuere mattis.
+                Nullam a lorem pharetra, pulvinar urna volutpat, rhoncus lectus. Vestibulum vel orci diam.</p>
+            <p class="feature">Feature 3: ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
+            <button class="cta">Add to chart</button>
+        </div>
+        
+    </body>
+</html>
