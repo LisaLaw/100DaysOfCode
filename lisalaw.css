@@ -1,30 +1,34 @@
 html {
     width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #d56005;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 body {
-    background-color: #e2725b;
+    background-color: rgb(248, 193, 131);
     width: 97%;
     align-self: center;
-    height: 1000px;
     border-radius: 2px;
-    display: grid;
-    place-items: center;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 nav {
     height: 50px;
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 97%;
+    justify-content: space-evenly;
+    width: 95%;
     background-color: #b7410e;
     align-items: center;
-    border-radius: 2px;
+    border-radius: 7px;
+    margin-top: 15px;
+    z-index: 5;
+    box-shadow: 1px 1px 3px #86300cd5;
 }
 nav a {
     text-transform: uppercase;
@@ -37,31 +41,164 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
-    color: maroon;
+    color: white;
     transform: scale(1.1);
     font-weight: bolder;
 }
 nav a:active {
-    background-color: olivedrab;
+    background-color: grey;
     border-radius: 2px;
+    overflow: hidden;
 }
-.home {
-    height: 500px;
-    align-content: center;
+.main {
+    height: 550px;
     background-color: #d56005;
-    width: 95%;
-    box-shadow: -1px -1px 3px #711c1b;
-    border-radius: 2px;
-    display: grid;
-    place-items: center;
-}
-.title {
-    font-size: 50px;
-    text-align: center;
-    color: #711c1b;
-} 
-.projects {
+    width: 85%;
+    box-shadow: -1px 1px 15px #711c1b;
+    border-radius: 10px;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
+}
+.title {
+    font-size: 35px;
+    text-align: left;
+    line-height: 2;
+    color: black;
+    width: 800px;
+    margin-left: 30px;
+    text-shadow: 1px 1px #711c1b;
+    align-self: center;
+} 
+#main-CV {
+    justify-content: space-around;
+    height: auto;
+    margin-top: 100px;
+}
+.main-left {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.img-container {
+    align-self: center;
+    padding-top: 10px;
+}
+img {
+    border-radius: 5px;
+}
+.intro {
+    margin-right: 20px;
+    text-align: justify;
+    margin-top: 30px;
+}
+.main-right {
+    padding: 10px;
+}
+.curriculum {
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 450px;
+}
+.curriculum p {
+    color: rgb(248, 248, 48);
+    line-height: 1.5;
+    font-size: 13px;
+}
+.punctuation {
+    color: #d56005;
+    font-weight: bold;
+}
+.value {
+    color: white;
+}
+#main-projects {
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+.front-end, .back-end {
+    margin: 40px 10px;
+    max-width: 50%;
+}
+.front-end {
+    border-right: 2px solid black;
+}
+.front-end h1, .back-end h1 {
+    margin-left: 50px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 10px;
+}
+.project-card {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 4px 4px #86300cd5;
+    background-color: #b7410e;
+}
+.project-card h3 {
+    width: 80%;
+    background: #b7410e;
+    align-self: center;
+    text-align: center;
+    padding: 15px;
+    line-height: 1.5;
+    margin-bottom: -15px;
+    z-index: 2;
+}
+.project-card img {
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    margin: 10px;
+    align-self: center;
+    z-index: 1;
+    margin: 15px;
+    background-color: #b7410e;
+    box-shadow: 0.5px 0.5px 3px black;
+}
+#main-skills {
+    height: auto;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+.skills-container, .certificates-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 15px;
+}
+.skills-container {
+    border-bottom: black solid 1px;
+    padding: 20px;
+}
+.certificates-container {
+    padding: 50px;
+}
+.skills img {
+    background-color: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+h4 {
+    text-align: center;
+}
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }

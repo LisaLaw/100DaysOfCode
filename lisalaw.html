@@ -7,34 +7,197 @@
         <title>Lisa Law</title>
     </head>
     <body>
-        <nav>
+        <nav><!--navigation set with a tags to link to different parts of the page-->
             <a href="#home">Home</a>
-            <a href="#">CV</a>
-            <a href="#front-end">Front-end</a>
-            <a href="#">Back-end</a>
-            <a href="#">Skills</a>
-            <a href="#">Certificates</a>
-            <a href="#">About me</a>
-            <a href="#">Contact</a>
+            <a href="#CV">CV</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#about">About me</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <div class="home" id="home">
+        <div class="anchor" id="home"></div><!--empty anchor class to put main class into focus-->
+        <div class="main">
             <h1 class="title">
                 Hello and welcome to my webpage! <br>
                 My name is Lisa and here you can find out about all the cool stuff that I do.
             </h1>
         </div>
-        <div class="projects">
-            <h1 id="front-end">Front-end</h1>
-            <div class="project">
-                <a href="#">
-                    <div class="img-container">
-                        <img src="" alt="pricing">
-                    </div>
-                    <div class="presentation">
-                        <h3>Pricing Options</h3>
-                        <p class="status">In progress</p>
-                    </div>
-                </a>
+        <div class="anchor" id="CV"></div><!--empty anchor class which puts the main class below in a visible position when clicked on in nav, rather than being half hidden behind nav. -->
+        <div class="main" id="main-CV"><!--extra id chosen to inherit .main attributes and add some #main-CV attributes-->
+            <div class="main-left">
+                <div class="img-container">
+                    <img src="./profilepic1.png" alt="me">
+                </div>
+                <div class="intro">
+                    <p>
+                        Hello! My name is Lisa and I am a auto-didactic web developer.<br>
+                        I have found my passion for programming through trial and error. <br><br>
+                        My original field of studies was Linguistics, which I decided to develop into Computational Linguistics (or NLP).<br>
+                        I had the fantastic opportunity to spend a year at UCLA, home of Computational Linguistics in the US and benefitted from some incredible teachers and courses, which first sparked my interest.<br>
+                        <br>
+                        But I wasn't ready to make the jump then. I worked as a Project Manager in translations for a while which taught me multitasking and what it's like to work in a fast-paced environment.<br>
+                        Next, I completed a Master's level programme in education, a Post Graduate Certificate in Secondary Foreign Language Teaching (PGCE) and before I knew it, I was working with teenagers. An invaluable experience which I wouldn't have missed for any price, this taught me patience and looking at a problem from every point of view.<br>
+                        During this time, I strongly felt a need to create, to develop and to work with challenging, analytical tasks.<br>
+                        I researched Master programmes in programming and / or NLP but in the end decided to teach myself.<br>
+                        <br>
+                        I have some experience teaching myself as I have a love for languages and have previously learned Spanish and French mostly by myself. I love working on a new language - be it spoken or coding -, working out the intrinc details and logic structures that underlie them.<br>
+                        <br>
+                        So at the beginning of 2020 I started my Python journey with Coursera courses and have been hooked every since.<br>
+                        A short while later I also started refreshing my HTML, CSS and JavaScript. In May I started the 100 Day of Code - Challenge.<br>
+                        I have been coding every day since and I'm learning and loving it.
+                    </p>
+                </div>
             </div>
-            <div class="top"></div>
+            <div class="main-right">
+                <div class="curriculum"><!--curriculum written as if it was back-end code &emsp; symbol for tab space-->
+                    <p><span class="punctuation">{</span><br><!--.punctuation to mark commas, list, dictionary starts / finished in different color-->
+                        &emsp;"name" : <span class="value"> "Lisa"</span><span class="punctuation">,</span><br><!--.value to mark the value of the key-value pair in a dictionary in a different color-->
+                        &emsp;"last_name" : <span class="value"> "Law"</span><span class="punctuation">,</span><br>
+                        &emsp;"email" : <span class="value"> "lisacatlaw@gmail.com"</span><span class="punctuation">,</span><br>
+                        &emsp;"phone" : <span class="value"> "0044 7366 40 95 18"</span><span class="punctuation">,</span><br>
+                        &emsp;"webpage" : <span class="value"> "lisalaw.github.io"</span><span class="punctuation">,</span><br>
+                        &emsp;"github" : <span class="value"> "github.io/lisalaw/100daysofcode"</span><br>
+                        &emsp;"experience" : <br>
+                        &emsp;<span class="punctuation">[</span><br>
+                        &emsp;&emsp;<span class="punctuation">{</span><br>
+                        &emsp;&emsp;&emsp;"area" : <span class="value"> "Back-end Developer"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"since" : <span class="value"> "January 2020"</span><span class="punctuation">,</span> <br>
+                        &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span><br>
+                        &emsp;&emsp;<span class="punctuation">},</span><br>
+                        &emsp;&emsp;<span class="punctuation">{</span><br>
+                        &emsp;&emsp;&emsp;"area" : <span class="value"> "Front-end Developer"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"since" : <span class="value"> "May 2020"</span><span class="punctuation">,</span> <br>
+                        &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span><br>
+                        &emsp;&emsp;<span class="punctuation">},</span><br>
+                        &emsp;&emsp;<span class="punctuation">{</span><br>
+                        &emsp;&emsp;&emsp;"area" : <span class="value"> "Secondary Teacher"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"level" : <span class="value"> "Recently Qualified Teacher (RQT)"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"since" : <span class="value"> "September 2018"</span><span class="punctuation">,</span> <br>
+                        &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><br>
+                        &emsp;&emsp;&emsp;"speciality" : <br>
+                        &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"German"</span><span class="punctuation">,</span><span class="value"> "Spanish"</span><span class="punctuation">,</span><span class="value"> "French"</span><br>
+                        &emsp;&emsp;&emsp;&emsp;<span class="punctuation">]</span><br>
+                        &emsp;&emsp;<span class="punctuation">},</span><br>
+                        &emsp;&emsp;<span class="punctuation">{</span><br>
+                        &emsp;&emsp;&emsp;"area" : <span class="value"> "Project Manager"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"since" : <span class="value"> "September 2017"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;<span class="punctuation">},</span><br>
+                        &emsp;&emsp;&emsp;"area" : <span class="value"> "Student"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"level" : <br>
+                        &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"B.A."</span><span class="punctuation">,</span><span class="value"> "M.A"</span><br>
+                        &emsp;&emsp;&emsp;&emsp;<span class="punctuation">],</span><br>
+                        &emsp;&emsp;&emsp;"since" : <span class="value"> "September 2012"</span><span class="punctuation">,</span> <br>
+                        &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"speciality" : <br>
+                        &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"Computational Linguistics"</span><span class="punctuation">,</span><span class=value> "Education"</span><br>
+                        &emsp;&emsp;&emsp;&emsp;<span class="punctuation">]</span><br>
+                        &emsp;&emsp;<span class="punctuation">}</span><br>
+                        &emsp;<span class="punctuation">]</span><br>
+                        <span class="punctuation">}</span>
+                    </p>
+                </div>
+            </div>
         </div>
+        <div class="anchor" id="projects"></div><!--empty anchor class which puts the main class below in a visible position when clicked on in nav, rather than being half hidden behind nav. -->
+        <div class="main" id="main-projects"><!--id chosen to add features to .main, different from .main-CV-->
+            <div class="front-end">
+                <h1>Front-end</h1>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>
+                </div>
+            </div>
+            <div class="back-end">
+                <h1>Back-end</h1>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>         
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>         
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>         
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>         
+                </div>  
+            </div>
+        </div>
+        <div class="anchor" id="skills"></div><!--empty anchor class which puts the main class below in a visible position when clicked on in nav, rather than being half hidden behind nav. -->
+        <div class="main" id="main-skills"><!--id chosen to add features to .main, different from previous main- ids-->
+            <div class="skills-container">
+                <h1>Skills</h1>
+                <div class="skills">
+                    <img src="https://img.icons8.com/color/144/000000/html-5.png" alt="html">
+                    <h4>HTML-5</h4>
+                </div>
+                <div class="skills">
+                    <img src="https://img.icons8.com/color/144/000000/css3.png" alt="css">
+                    <h4>CSS-3</h4>
+                </div>
+                <div class="skills">
+                    <img src="https://img.icons8.com/color/144/000000/javascript.png" alt="js">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skills">
+                    <img src="https://img.icons8.com/color/144/000000/python.png" alt="python">
+                    <h4>Python</h4>
+                </div>
+            </div>
+            <div class="certificates-container" id="certificates">
+                <h1>Certificates</h1>
+                <div class="certificate">
+                   <h4>Programming for Everybody<br>(Getting Started with Python)</h4>
+                   <img src="./coursera.png" alt="coursera">
+                </div>
+                <div class="certificate">
+                    <h4>Python Data Structures</h4>
+                    <img src="./coursera.png" alt="coursera">
+                </div>
+                <div class="certificate">
+                    <h4>Using Python to Access Web Data</h4>
+                    <img src="./coursera.png" alt="coursera">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
