@@ -9,5 +9,6 @@ def validate(password):
         print('La contraseña debe ser alfanumérica.')
     else:
         print('Tu contraseña se ha guardado.')
+        return True
 
 validate(pw)
