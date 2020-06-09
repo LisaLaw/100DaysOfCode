@@ -1,0 +1,101 @@
+html {
+    width: 100%;
+    background-color: white;
+}
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#arrow-left {
+    width: 0px;
+    height: 0px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid crimson;
+    border-radius: 5px;
+    padding-left: 50px;
+}
+#arrow-right {
+    width: 0px;
+    height: 0px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid crimson;
+    border-radius: 5px;
+    padding-right: 50px;
+}
+#arrow-right:hover, #arrow-left:hover {
+    cursor: pointer;
+}
+.flashcard {
+    margin: 0px auto;
+    width: 600px;
+    height: 400px;
+}
+p {
+    color: crimson;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.flashcard .front {
+    position: absolute;
+    transform: perspective(600px) rotateY( 0deg );
+    -webkit-transform: perspective(600px) rotateY( 0deg );
+    border-radius: 5px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform 0.5s linear;
+    transition: transform 0.5s linear;
+    background-color: rgb(248, 213, 148);
+    width: 600px;
+    height: 400px;
+    border: crimson 2px solid;
+    box-shadow: 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flashcard .back {
+    position: absolute;
+    transform: perspective(600px) rotateY( 180deg );
+    -webkit-transform: perspective(600px) rotateY( 180deg );
+    border-radius: 5px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform 0.5s linear;
+    transition: transform 0.5s linear 0s;
+    background-color: pink;
+    width: 600px;
+    height: 400px;
+    border: crimson 2px solid;
+    box-shadow: 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flashcard:hover .front {
+    transform: perspective(600px) rotateY( -180deg );
+    -webkit-transform: perspective(600px) rotateY( -180deg );
+}
+.flashcard:hover .back {
+    transform: perspective(600px) rotateY( 0deg );
+    -webkit-transform: perspective(600px) rotateY( 0deg );
+}
+/*
+.turned  {
+    transform: perspective(600px) rotateY( -180deg );
+    -webkit-transform: perspective(600px) rotateY( -180deg );  
+}
+
+*/
+.flashcard:hover .front {
+    transform: perspective(600px) rotateY( -180deg );
+    -webkit-transform: perspective(600px) rotateY( -180deg );
+}
+.flashcard:hover .back {
+    transform: perspective(600px) rotateY( 0deg );
+    -webkit-transform: perspective(600px) rotateY( 0deg );
+}

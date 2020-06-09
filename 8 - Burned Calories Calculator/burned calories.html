@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Burned Calories Calculator</title><!--https://caloriesburnedhq.com/calories-burned-weight-lifting/-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./burned calories.css">
+    </head>
+    <body>
+        <h2>Weight Lifting & Calisthenics<br>Calories Burned Calculator<br>For Women</h2>
+        <form>
+            <label for="weight" class="large">Your Weight (in kg)</label>
+            <br>
+            <input id="weight" type="number" value="40">
+            <br>
+            <label for="time" class="large">Workout Mins</label>
+            <br>
+            <input id="time" type="number" value="60">
+            <ul>
+                <li id="pushups" class="switch checked">
+                    <label for="pushups">Pushups</label>
+                </li>
+                <li id="lunges" class="switch checked">
+                    <label for="lunges">Lunges</label>
+                </li>
+                <br>
+                <li id="pullups" class="switch checked">
+                    <label for="pullups">Pull Ups</label>
+                </li>
+                <li id="squats" class="switch checked">
+                    <label for="squats">Squats</label>
+                </li>
+                <br>
+                <li id="jumpjacks" class="switch checked">
+                    <label for="jumpjacks">Jumping Jacks</label>
+                </li>
+                <li id="core" class="switch checked">
+                    <label for="core">Situps /<br>Crunches /<br>Planks</label>
+                </li>
+                <br>
+                <li id="resist" class="switch checked">
+                    <label for="resist">Resistance /<br>Free Weights</label>
+                </li>
+            </ul>
+            <h2>Calories Burned:</h2>
+            <br>
+            <label id="burned_calc_value" for="result" placeholder="200"></label>
+        </form>
+    </body>
+</html>
