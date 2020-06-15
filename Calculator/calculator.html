@@ -4,7 +4,12 @@
         <title>Calculator</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="calc.css">
-        <script src="calc.js"></script>
+        <script> //on load, create a new version every time to clear cache
+            var script = document.createElement('script'); 
+            var version = (new Date).toISOString()
+            script.src = "calc.js?v="+version;
+            document.head.appendChild(script)
+        </script>
     </head>
     <body>
         <div class="calculator">
