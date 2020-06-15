@@ -1,0 +1,52 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.calculator {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 100%;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    border-radius: 5px;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.display {
+    background-color: black;
+    color: white;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+button {
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.previous-operand, .current-operand {
+    padding: 10px;
+}
+
+.previous-operand {
+    font-size: 20px;
+}
+
+.current-operand {
+    font-size: 35px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
