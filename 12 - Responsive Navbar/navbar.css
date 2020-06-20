@@ -1,0 +1,138 @@
+html {
+    width: 100%;
+    font-family: proxima-nova, sans-serif;
+    height: 5000px;
+}
+
+body {
+    width: 96%;
+    top: 0;
+    display: block;
+}
+
+.navbar {
+    width: 98%;
+    right: 1px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.1s;
+    padding: 35px 10px;
+    overflow: hidden;
+    z-index: 4;
+    background-color: white;
+}
+
+#left {
+    align-self: flex-start;
+}
+
+#right {
+    align-self: flex-end;
+}
+
+.nav-links ul{
+    justify-content: flex-start;
+}
+
+#cent {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li {
+    list-style: none;
+    display: block;
+    padding: 5px;
+}
+
+.navbar a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.navbar li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.toggle-button {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    right: 12px;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+}
+
+.link-bar {
+    background-color: black;
+    border-radius: 10px;
+    height: 2.5px;
+    width: 100%;
+    padding: 1px;
+}
+
+@media (max-width: 1000px) {
+    
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 0px;
+        top: 10px;
+        right: 10px;
+    }
+
+    #cent {
+        position: absolute;
+    }
+
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #left ul {
+        margin-top: 25px;
+    }
+
+    #right ul {
+        margin-top: -15px;
+    }
+
+    .navbar li {
+        text-align: center;
+        padding-top: 5px;
+        background-color: rgb(177, 176, 176);
+        border: solid 1px white;
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
