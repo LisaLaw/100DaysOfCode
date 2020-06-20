@@ -3,24 +3,31 @@ html {
     display: grid;
     place-items: center;
 }
+
 body {
     text-align: center;
 }
+
 form {
     border: solid black 1px;
     padding: 50px;
     border-radius: 20px;
 }
+
 input {
     font-size: 15px;
 }
+
+/*make arrows visible in number inputs:*/
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1
 }
+
 .large{
     line-height: 50px;
     font-size: 25px;
 }
+
 ul {
     list-style-type: none;
     display: block;
@@ -28,6 +35,7 @@ ul {
     text-align: center;
     box-sizing: border-box;
 }
+
 li {
     display: inline-block;
     align-self: stretch;
@@ -42,8 +50,12 @@ li {
     vertical-align: middle;
     font-weight: bold;
 }
+
 li:hover {
     background-color: cornsilk;
     color: black;
-    
+    cursor: pointer;
+}
+li:hover label {
+    cursor: pointer;
 }
