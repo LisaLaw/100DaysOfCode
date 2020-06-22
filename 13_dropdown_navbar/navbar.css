@@ -30,7 +30,7 @@ body {
     align-self: flex-end;
 }
 
-.nav-links ul.outer{
+.nav-links .outer-list {
     justify-content: flex-start;
 }
 
@@ -45,7 +45,7 @@ body {
     flex-direction: row;
 }
 
-.navbar ul.inner-list {
+.navbar .inner-list {
     position: absolute;
     left: 0px;
     display: none;
@@ -54,16 +54,16 @@ body {
     margin-top: 20px;
 }
 
-.navbar ul.inner-list.active-dropdown {
+.navbar .inner-list.active-dropdown {
     display: flex;
     flex-wrap: wrap;
 }
-.navbar ul.inner-list.active-dropdown li {
+.navbar .inner-list.active-dropdown li {
     display: block;
     margin-top: 20px;
 }
 
-.navbar ul.inner-list.active-dropdown li a {
+.navbar .inner-list.active-dropdown li a {
     text-align: left;
     line-height: 0.8px;
     padding: 10px;
@@ -71,7 +71,7 @@ body {
     align-self: flex-start;
 }
 
-.navbar ul.inner-list.inactive-dropdown {
+.navbar .inner-list.inactive-dropdown {
     display: none;
 }
 
@@ -97,7 +97,7 @@ body {
     text-decoration: underline;
 }
 
-.navbar li.inner:hover {
+.navbar .inner-list-item:hover {
     color: grey;
 }
 
@@ -151,20 +151,20 @@ body {
         position: absolute;
     }
 
-    .navbar ul.outer {
+    .navbar .outer-list {
         width: 100%;
         flex-direction: column;
     }
 
-    #left ul.outer {
+    #left .outer-list {
         margin-top: 25px;
     }
 
-    #right ul.outer {
+    #right .outer-list {
         margin-top: -15px;
     }
 
-    .navbar li.outer {
+    .navbar .outer-list-item {
         text-align: center;
         padding-top: 5px;
         background-color: rgb(177, 176, 176);
