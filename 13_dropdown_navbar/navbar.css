@@ -22,11 +22,11 @@ body {
     background-color: white;
 }
 
-#left {
+#nav-left {
     align-self: flex-start;
 }
 
-#right {
+#nav-right {
     align-self: flex-end;
 }
 
@@ -34,7 +34,7 @@ body {
     justify-content: flex-start;
 }
 
-#cent {
+#nav-cent {
     font-size: 50px;
     font-weight: bolder;
     text-align: center;
@@ -147,7 +147,7 @@ body {
         right: 10px;
     }
 
-    #cent {
+    #nav-cent {
         position: absolute;
     }
 
@@ -156,11 +156,11 @@ body {
         flex-direction: column;
     }
 
-    #left .outer-list {
+    #nav-left .outer-list {
         margin-top: 25px;
     }
 
-    #right .outer-list {
+    #nav-right .outer-list {
         margin-top: -15px;
     }
 
