@@ -14,7 +14,7 @@ let secondDropdownBtn = document.getElementsByClassName('dropdown')[1];
 let firstInnerLinks = document.getElementsByClassName('inner-list')[0];
 let secondInnerLinks = document.getElementsByClassName('inner-list')[1];
 
-//shop+ btn:
+//shop+ button:
 firstDropdownBtn.addEventListener('click', () => { //on click, do the following
     if (secondInnerLinks.classList == 'inactive-dropdown' && firstInnerLinks.classList == 'inactive-dropdown') { //if both buttons are closed
         firstInnerLinks.classList.remove('inactive-dropdown'); //remove closure from this btn
@@ -28,7 +28,7 @@ firstDropdownBtn.addEventListener('click', () => { //on click, do the following
     }
 })
 
-//vivo+ btn
+//vivo+ button
 secondDropdownBtn.addEventListener('click', () => { //on click, do the following
     if (firstInnerLinks.classList == 'inactive-dropdown' && secondInnerLinks.classList == 'inactive-dropdown') { //if both buttons are closed
         secondInnerLinks.classList.remove('inactive-dropdown'); //remove closure from this btn
